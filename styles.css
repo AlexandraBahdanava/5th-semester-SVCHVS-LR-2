@@ -1,0 +1,86 @@
+/* styles.css */
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background-color: #f0f0f0;
+    padding: 10px;
+    text-align: center;
+}
+
+input[type="text"] {
+    width: 70%;
+    padding: 5px;
+    border: 1px solid #ccc;
+    transition: border 0.3s ease; /* Плавное изменение цвета границы */
+}
+
+/* Стили для активного состояния поля ввода */
+input[type="text"]:focus {
+    border: 1px solid #007bff;
+    outline: none; /* Убираем контур фокуса */
+}
+
+button {
+    padding: 5px 10px;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+    margin-left: 10px;
+    transition: background-color 0.3s ease; /* Плавное изменение цвета фона */
+}
+
+/* Стили для активного состояния кнопки */
+button:hover {
+    background-color: #0056b3;
+}
+
+main {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding: 10px;
+}
+
+.photo-card {
+    width: 30%;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+    padding: 10px;
+    background-color: #fff;
+    transition: transform 0.3s ease; /* Плавное изменение масштаба карточки */
+}
+
+/* Стили для активного состояния карточки фото при наведении */
+.photo-card:hover {
+    transform: scale(1.05); /* Увеличиваем масштаб при наведении */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2); /* Плавное изменение тени */
+}
+
+.photo-card img {
+    width: 100%;
+    height: auto;
+    display: block;
+    margin: 0 auto;
+}
+
+footer {
+    background-color: #f0f0f0;
+    text-align: center;
+    padding: 10px;
+}
+
+a {
+    text-decoration: none;
+    color: #007bff;
+}
+
+a:hover {
+    text-decoration: underline;
+}
